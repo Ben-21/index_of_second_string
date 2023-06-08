@@ -47,6 +47,4 @@ public class SecondStringTest {
 
         Assertions.assertEquals(expected, actual);
     }
-
-
 }
