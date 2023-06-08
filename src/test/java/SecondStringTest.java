@@ -33,6 +33,20 @@ public class SecondStringTest {
 
         Assertions.assertEquals(expected, actual);
     }
+@Test
+    void returnsminus1_whenOneLetterInString() {
+        String input = "Stringaufgabe";
+        char letter = 'n';
+
+
+        SecondString secondString = new SecondString();
+
+
+        int actual = secondString.secondSymbol(input, letter);
+        int expected = -1;
+
+        Assertions.assertEquals(expected, actual);
+    }
 
 
 }
