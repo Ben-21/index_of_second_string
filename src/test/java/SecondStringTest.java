@@ -36,7 +36,7 @@ public class SecondStringTest {
 @Test
     void returnsminus1_whenOneLetterInString() {
         String input = "Stringaufgabe";
-        char letter = 'n';
+        char letter = 'a';
 
 
         SecondString secondString = new SecondString();
