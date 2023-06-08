@@ -1,4 +1,5 @@
 import model.SecondString;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class SecondStringTest {
@@ -16,7 +17,7 @@ public class SecondStringTest {
     int actual = secondString.secondSymbol(input, letter);
     int expected = 3;
 
-
+    Assertions.assertEquals(expected, actual);
 
 }
 
