@@ -5,23 +5,34 @@ import org.junit.jupiter.api.Test;
 public class SecondStringTest {
 
 
-@Test
-    void returnsIndexOfSecondLetter(){
-    String input = "hello";
-    char letter = 'l';
+    @Test
+    void returnsIndexOfSecondLetter() {
+        String input = "hello";
+        char letter = 'l';
 
 
-    SecondString secondString = new SecondString();
+        SecondString secondString = new SecondString();
 
 
-    int actual = secondString.secondSymbol(input, letter);
-    int expected = 3;
+        int actual = secondString.secondSymbol(input, letter);
+        int expected = 3;
 
-    Assertions.assertEquals(expected, actual);
+        Assertions.assertEquals(expected, actual);
+    }
+ @Test
+    void returnsminus1_whenNoLetterInString() {
+        String input = "Stringaufgabe";
+        char letter = 'l';
 
-}
+
+        SecondString secondString = new SecondString();
 
 
+        int actual = secondString.secondSymbol(input, letter);
+        int expected = -1;
+
+        Assertions.assertEquals(expected, actual);
+    }
 
 
 }
